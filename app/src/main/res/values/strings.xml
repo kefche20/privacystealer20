@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Privacy Stealer</string>
+    <string name="app_info">This app shows your last 3 locations. It steals your private info in the background and downloads your location. *wastes a lot of battery, too.*</string>
+</resources>
