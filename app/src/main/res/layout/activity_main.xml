@@ -78,7 +78,13 @@
         android:layout_height="wrap_content"
         android:text="Get Location"
         tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="195dp"></Button>
+        tools:layout_editor_absoluteY="195dp"/>
+    <Button
+        android:id="@+id/btnGetInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Load locations"/>
 
 
     <ProgressBar
