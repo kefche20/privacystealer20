@@ -8,9 +8,9 @@ import android.util.Log;
  * Created by kefch_000 on 3/28/2018.
  */
 
-public abstract class DataSaver {
+public abstract class DataSaver extends LocationService {
 
-    public static boolean addFavoriteItem(Activity activity,String favoriteItem) {
+    public static boolean addFavoriteItem(Activity activity, String favoriteItem) {
         String favoriteList = null;
         try {
             favoriteList = getStringFromPreferences(activity, null, "favorites");
@@ -29,6 +29,25 @@ public abstract class DataSaver {
         return putStringInPreferences(activity, favoriteList, "favorites");
 
     }
+ /*   public static deleteFavoriteItem(Activity activity) {
+        String favoriteList = null;
+        try {
+            favoriteList = getStringFromPreferences(activity, null, "favorites");
+            if (favoriteList != null) {
+                SharedPreferences preferences = getSharedPreferences("favourites", 0);
+                preferences.edit().remove("favourites").commit();
+                return true;
+            }
+        }
+        catch(Exception e)
+            {
+                Log.v("TAG", "datasaver add favourite item");
+                return false;
+            }
+
+
+        return false;
+    }*/
     public static String[] getFavoriteList(Activity activity){
         String favoriteList = getStringFromPreferences(activity,null,"favorites");
 
